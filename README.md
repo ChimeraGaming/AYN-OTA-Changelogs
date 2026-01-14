@@ -6,6 +6,7 @@ It is intended for users who do not use Discord or who prefer a clean, chronolog
 
 Currently tracking OTA updates for AYN Thor, Odin 2, and Odin 3. 
 > Additional devices may be added in the future.
+> 
 > Could not locate reliable Changelogs for Odin 1 or Loki
 
 ---
