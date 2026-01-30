@@ -4,6 +4,17 @@
 <details>
 <summary>View 2026 updates</summary>
 
+### Thor v1.0.0.372 (2026-xx-xx)
+<details>
+<summary>View changes</summary>
+
+- Added **OLED Ultra Black Mode** in Odin Settings → Advanced Settings to reduce color shift and the “mura effect” at extremely low brightness levels, especially when dark mode is enabled.
+- Fixed an issue that caused the battery gauge to incorrectly report 1 percent.
+- Added support for automatically binding Home/Return buttons to the active touch screen or the focus-locked screen.
+- Fixed the on-screen volume slider not functioning correctly with Bluetooth earbuds and wired headphones.
+
+</details>
+
 ### Thor v1.0.0.360 (2026-01-13)
 <details>
 <summary>View changes</summary>
@@ -63,7 +74,7 @@
 
 - Fixed system crash when setting Android stock wallpaper with an image below 1240×1080 resolution.
 - Fixed TCC clock displaying only 12-hour format regardless of system setting.
-- Fixed inability to unlock the device when lock screen password was enabled and TCC was set to bottom-screen-only mode.
+- Fixed inability to unlock the device when lock screen password was enabled and TCC was set to “bottom screen only” mode.
 - Fixed bottom screen lighting up unexpectedly and TCC becoming unresponsive when using vertical screen apps in top-screen-only mode.
 - Added support for setting wallpapers independently on the bottom screen.
 - Fixed occasional wake and sleep failures when rapidly opening or closing the lid.
