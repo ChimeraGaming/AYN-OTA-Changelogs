@@ -4,7 +4,7 @@
 <details>
 <summary>View 2026 updates</summary>
 
-### Thor v1.0.0.372 (2026-xx-xx)
+### Thor v1.0.0.372 (2026-01-29)
 <details>
 <summary>View changes</summary>
 
