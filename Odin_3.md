@@ -1,4 +1,4 @@
-# AYN Odin 3 — Software Changelog
+# AYN Odin 3 - Software Changelog
 
 ## 2026
 <details>
