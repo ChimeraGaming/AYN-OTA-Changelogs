@@ -1,10 +1,10 @@
 # AYN Odin 3 — Software Changelog
 
-## 2025
+## 2026
 <details>
-<summary>View 2025 updates</summary>
+<summary>View 2026 updates</summary>
 
-### Odin 3 v1.0.0.151 (2025-xx-xx)
+### Odin 3 v1.0.0.151 (2026-02-04)
 <details>
 <summary>View changes</summary>
 
@@ -22,6 +22,13 @@
 - Added custom fan control functionality.
 
 </details>
+</details>
+
+---
+
+## 2025
+<details>
+<summary>View 2025 updates</summary>
 
 ### Odin 3 OTA Update (2025-12-04)
 <details>
@@ -34,5 +41,4 @@
 - Added built-in pixel refresher capable of clearing transient image retention in ~9 seconds.
 
 </details>
-
 </details>
