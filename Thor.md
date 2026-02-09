@@ -4,6 +4,18 @@
 <details>
 <summary>View 2026 updates</summary>
 
+### Thor v1.0.0.377 (2026-02-08)
+<details>
+<summary>View changes</summary>
+
+- Added new **TCC theme settings** for the bottom screen, including Black Theme and Gray Theme.  
+  The Black Theme was reverted to the previous version and set as the default.
+- Added support for **custom audio EQ curves** and included several preset profiles such as:  
+  Bass Boost, Treble Boost, Softer, Balanced, Dynamic, Clear, Smooth, and Custom curve options.  
+  (Located under Thor Settings → Equalizer Settings.)
+
+</details>
+
 ### Thor v1.0.0.372 (2026-01-29)
 <details>
 <summary>View changes</summary>
