@@ -4,6 +4,19 @@
 <details>
 <summary>View 2026 updates</summary>
 
+### Odin 3 OTA Update (2026-06-17)
+<details>
+<summary>View changes</summary>
+
+1. Updated the GPU driver to version 800.72, addressing GPU hang issues in graphics-intensive titles such as Zenless Zone Zero.
+2. Resolved an issue where the microphone remained silent during WeChat voice calls.
+3. Corrected abnormal resolution display when connecting to AR glasses.
+4. Fixed random crashes encountered while launching PUBG Mobile.
+5. Addressed a bug preventing the input method pop-up from appearing during wireless Shizuku pairing.
+6. Corrected inaccurate battery cutoff current readings in specific apps like Battery Monitor.apk.
+
+</details>
+
 ### Odin 3 v1.0.0.151 (2026-02-04)
 <details>
 <summary>View changes</summary>
