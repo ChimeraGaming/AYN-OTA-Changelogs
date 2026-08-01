@@ -1,56 +1,75 @@
 # Thor CPU Profiles
 
-CPU frequency profile scripts for AYN Thor.
+> [!WARNING]
+>
+> ## Deprecated
+>
+> This project is no longer maintained.
+>
+> Use [ClusterTune](https://github.com/AurelioB/ClusterTune) instead.
 
-This is NOT undervolting.  
-These scripts limit the maximum CPU frequency to reduce heat, fan noise, and battery usage.
+CPU frequency profile scripts for the AYN Thor.
+
+This is **not undervolting**. These scripts limit the maximum CPU frequency to reduce heat, fan noise, and battery usage.
 
 ---
 
 ## Features
 
-- One file per profile for simple execution
-- Snapshot system for accurate restore
-- Automatic snapshot on first run
-- Restore to true device defaults
-- No permanent system modifications
-- Works directly with Thor built in root script runner
+* One file per profile for simple execution
+* Snapshot system for accurate restoration
+* Automatic snapshot on first run
+* Restores the device's original CPU limits
+* No permanent system modifications
+* Works with the Thor's built-in root script runner
 
 ---
 
 ## Requirements
 
-- Root access required
-- AYN Thor device
+* A rooted AYN Thor
+* Root access must be properly enabled
+
+The Thor's **Run script as Root** option does not root the device. It only provides an easy way to run scripts with root permissions on a device that is already rooted.
 
 ---
 
-## Thor Native Method (Recommended)
+## Thor Native Method
 
-Thor includes a built in script runner.
+The Thor includes a built-in script runner.
 
 Go to:
 
-Settings > Thor settings > Run script as Root
+```text
+Settings > Thor Settings > Run script as Root
+```
 
-From there you can select and run any of the script files directly.
+From there, select and run any of the script files directly.
 
-This is the easiest way to use these profiles without needing a terminal.
+This is the easiest way to use the profiles without opening a terminal.
 
 ---
 
 ## Installation
 
-1. Download all script files
-2. Place them in an accessible location such as:
+1. Download all script files.
+2. Place them in an accessible location, such as:
 
-/sdcard/  
-or  
+```text
+/sdcard/
+```
+
+or:
+
+```text
 /data/local/tmp/
+```
 
-Optional but recommended:
+Optionally, make the scripts executable:
 
+```sh
 chmod +x *.sh
+```
 
 ---
 
@@ -58,75 +77,90 @@ chmod +x *.sh
 
 ### Using Thor Settings
 
-Settings > Thor settings > Run script as Root  
-Select the script you want to run
+Go to:
 
----
+```text
+Settings > Thor Settings > Run script as Root
+```
 
-### Using Terminal
+Select the script you want to run.
 
-su  
-sh thor_balanced.sh  
+### Using a Terminal
+
+```sh
+su
+sh thor_balanced.sh
+```
 
 Or:
 
+```sh
 su -c "sh thor_balanced.sh"
+```
 
 ---
 
 ## Script Files
 
-thor_snapshot.sh = Saves current CPU limits  
-thor_battery.sh = Lowest power usage, best thermals  
-thor_balanced.sh = Default recommended profile  
-thor_performance.sh = Higher performance with mild limits  
-thor_restore.sh = Restores saved CPU limits from snapshot  
-thor_current.sh = Displays current CPU max and min frequencies  
+| Script                | Purpose                                                  |
+| --------------------- | -------------------------------------------------------- |
+| `thor_snapshot.sh`    | Saves the current CPU frequency limits                   |
+| `thor_battery.sh`     | Lowest power usage and best thermals                     |
+| `thor_balanced.sh`    | Default recommended profile                              |
+| `thor_performance.sh` | Higher performance with mild limits                      |
+| `thor_restore.sh`     | Restores CPU limits from the saved snapshot              |
+| `thor_current.sh`     | Displays the current minimum and maximum CPU frequencies |
 
 ---
 
 ## Snapshot System
 
-- A snapshot is automatically created the first time you run a profile
-- Snapshot is stored at:
+A snapshot is automatically created the first time a profile is applied.
 
+The snapshot is stored at:
+
+```text
 /data/local/tmp/thor_cpu_profiles/snapshot.env
+```
 
-- Restore uses this snapshot to return to your device specific defaults
-- This ensures compatibility across updates and different Thor units
+The restore script uses this snapshot to return the CPU frequency limits to the device-specific values that were active before a profile was applied.
+
+This helps maintain compatibility across firmware updates and different Thor units.
 
 ---
 
 ## Examples
 
-sh thor_snapshot.sh  
-sh thor_battery.sh  
-sh thor_balanced.sh  
-sh thor_performance.sh  
-sh thor_restore.sh  
-sh thor_current.sh  
+```sh
+sh thor_snapshot.sh
+sh thor_battery.sh
+sh thor_balanced.sh
+sh thor_performance.sh
+sh thor_restore.sh
+sh thor_current.sh
+```
 
 ---
 
 ## Important Notes
 
-- Changes are temporary and reset after reboot
-- Some firmware may override frequency limits
-- Performance heavy tasks may require the performance script
-- Snapshot ensures restore works correctly across updates
-- This does not change voltage or true power tables
+* Changes are temporary and normally reset after reboot.
+* Some firmware versions may override CPU frequency limits.
+* Performance-heavy applications may require the performance profile.
+* The snapshot system helps restore the correct limits across firmware versions and different units.
+* These scripts do not change voltage or the device's actual power tables.
+* The scripts will not work on an unrooted device, even though the Thor includes a **Run script as Root** option.
 
 ---
 
 ## Disclaimer
 
-Use at your own risk.  
-These scripts write to CPU frequency control nodes and may impact performance or stability.  
-No warranty is provided.
-Will not work if not rooted (despite being able to run script as root - thats just for easy applying)
+Use these scripts at your own risk.
+
+The scripts write to CPU frequency control nodes and may affect performance, stability, temperatures, or battery life. No warranty or support is provided.
 
 ---
 
 ## Credits
 
-Created for AYN Thor users looking for better thermal and battery control.
+Created for AYN Thor users looking for improved thermal and battery control.
