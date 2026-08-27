@@ -115,6 +115,18 @@
 <details>
 <summary>View 2026 updates</summary>
 
+#### Odin 2 Portal v1.0.0.452 (2026-08-27)
+<details>
+<summary>View changes</summary>
+
+- Integrated the latest Wi-Fi 7 firmware patch from Qualcomm to resolve Wi-Fi 7 connectivity issues.
+- Updated the color temperature profile to fix color inconsistencies when using DisplayPort (DP).
+- Added 1080p60 mode to the video output menu.
+
+> **Note:** This is a targeted OTA and is not being broadly distributed. Users who need this update must request access from AYN by providing their device serial number.
+
+</details>
+
 #### Odin 2 Portal v1.0.0.338 (2026-03-24)
 <details>
 <summary>View changes</summary>
